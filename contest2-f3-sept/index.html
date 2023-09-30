@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm app</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Multiple Timers App</h1>
+    </header>
+    <main>
+
+        <section id="setAlarmSection">
+            <span class="setAlarmTitle">Set Time :</span>
+            <span class="timeNow">
+                <input id="hours" type="number" name="hour" placeholder="hh" required /> <span class="seperator"> : </span>
+                <input id="minutes" type="number" name="minutes" placeholder="mm" min="0" max="60" required />  <span class="seperator"> : </span>
+                <input id="seconds" type="number" name="sec" min="0" max="60" placeholder="ss" required />
+            </span>
+            <button id="setTimerBtn" class="setBtn disable">Set</button>
+        </section>
+        <section id="currentTimerSection">
+            <button class="currentTimerBtn">Current Timers</button>
+            <div id="noTimersText">You have no timers currently!</div>
+            <div id="currentTimers">
+            </div>
+        </section>
+        <section id="alarm">
+            <audio id="alarm-audio"></audio>
+        </section>
+    </main>
+</body>
+
+</html>
