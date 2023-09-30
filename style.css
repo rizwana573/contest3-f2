@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin:0;
+    color:#fff;
+    background: #000;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+#currentTimers{
+  display: none;
+}
+#currentTimers.show{
+    display: block;;
+}
+section#setAlarmSection, #currentTimers.show div{
+    background: #34344A;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.timeNow span, .activerTimers{
+    font-size: 24px;
+    font-weight: 500;
+}
+.setBtn:hover{
+    color:#fff;
+    background: #000;
+}
+.setBtn{
+    width: 124px;
+    height: 52px;
+    border-radius: 26px;
+    background: #F0F757;
+    cursor: pointer;
+    font-size: 20px;
+    color:#34344A;
+    font-weight: 500;
+    border: none;
+}
+.setBtn.disable{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.currentTimerBtn{
+    background: #39393E;
+    width: 413px;
+    height: 66px;
+    border-radius: 50px;    
+    font-size: 20px;
+    color:#fff;
+    font-weight: 500;
+    border: none;
+    margin: 0 auto 30px;
+}
+input {
+    background: transparent;
+    padding: 0;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 80px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500; 
+}
